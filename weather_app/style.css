@@ -9,7 +9,7 @@ body{
 
 .container{
     background-color: #0B2D47;
-    height: 75vh;
+    height: 60vh;
     width: 35vw;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ font-size: 16px;
     background-color: #AC80A0;
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 16px;
+    margin: 16px 16px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -71,16 +71,22 @@ font-size: 16px;
 }
 
 #weather-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
   background-color: #83BFEC;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 50%;
-  max-width: 400px;
-  margin-top: 16px;
+  max-width: 500px;
+  margin-top: 16px 16px;
   text-align: center;
+  margin: 16px;
 }
 
-#weather-data p{
+.card p{
     font-size: 16px;
 }
