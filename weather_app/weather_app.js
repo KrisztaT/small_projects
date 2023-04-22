@@ -1,7 +1,7 @@
 const fetchWeatherBtn = document.getElementById("fetch-weather-btn");
 const cityInput = document.getElementById("city-input");
 const weatherDataDiv = document.getElementById("weather-data");
-const API_KEY = "your API_KEY"
+const API_KEY = "your API KEY"
 
 fetchWeatherBtn.addEventListener("click", async () => {
     const cityName = cityInput.value;
