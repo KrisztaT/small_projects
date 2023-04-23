@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #272838;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px #272838;
+}
+
+#user-input{
+    width: 24rem;
+    height: 2rem;
+    background-color: #F3DE8A;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#user-input:hover{
+    width: 24rem;
+    height: 2rem;
+    background-color: #f1d66b;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#user-input:focus {
+    border-color: #EB9486;
+}
+
+#search-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: #EB9486;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+#search-btn:hover {
+    background-color: #ea7a68;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+  
+#search-btn:active {
+background-color: #ec614b;
+box-shadow: none;
+transform: translateY(0);
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3DE8A;
+    width: 35vw;
+    padding: 24px 24px;
+}
+
+.img-card{
+    padding: 0 24px;
+}
+
+#avatar {
+  border-radius: 50%;
+  border: 6px solid #272838;
+  height: 150px;
+  width: 150px;
+}
+
+#bio{
+    font-size: 1.25rem;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.repo {
+    text-decoration: none;
+    color: black;
+    background-color: #F9F8F8;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+  @media (max-width: 500px) {
+    #container {
+      flex-direction: column;
+      align-items: center;
+      width: 75vw;
+    }
+    #user-input {
+      max-width: 200px;
+    }
+    .stats{
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    h2{
+        text-align: center;
+    }
+  }
